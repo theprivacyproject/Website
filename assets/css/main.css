@@ -1,0 +1,62 @@
+:root {
+--bg-color: #fff;
+--default-text-color:#5CE1E6;
+--secondary-color:red
+}
+.loader {
+position:fixed;
+height:100vh;
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+background:var(--bg-color);
+transition:all .5s;
+z-index:99;
+cursor:progress;
+overflow:hidden
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--default-text-color);
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#error {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: #ffffff;
+  bottom: 0;
+  right: 0;
+}
+.start {
+font-size: 60px;
+font-family: 'Montserrat';
+font-weight: 600;
+}
+@media screen and (max-width: 700px) {
+  #error {
+    display: none;
+  }
+}
